@@ -1,4 +1,9 @@
 // DO NOT CHANGE THIS CODE!!
+$(document).ready(function () {
+  $("#button").click(function () {
+    $("#button").prop("value", "Button was clicked!");
+  });
+});
 
 var getResponse = function () {
   var tasks = ["task1", "task2", "task3", "task4", "task5"];
