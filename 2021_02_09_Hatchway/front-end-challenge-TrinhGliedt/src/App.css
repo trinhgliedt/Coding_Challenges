@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+
+* {
+  font-family: "Raleway", sans-serif;
+  /* outline: 1px solid indigo; */
+}
+
+.wrapper {
+  border: 1px solid rgba(128, 128, 128, 0.616);
+  box-shadow: 0px 0px 2px 2px rgba(124, 122, 122, 0.76); /*any color you want*/
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.searchInput,
+.tagInput {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  font-size: large;
+}
+.searchInput:focus,
+.tagInput:focus {
+  outline: none;
+}
+.searchInput {
+  width: 96%;
+  padding: 1rem 1rem;
+}
+
+.tagInput {
+  width: 50%;
+  padding: 0.5rem 1rem;
+}
+
+.card {
+  border-bottom: 1px solid rgba(161, 156, 156, 0.726);
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.card:last-child {
+  border-bottom: none;
+}
+.leftDiv {
+  width: 20%;
+  padding: 0 0.5rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+img {
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+.rightDiv {
+  width: 70%;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+}
+
+.extraMargin {
+  margin-left: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  display: inline;
+  margin-top: 1.6rem;
+  padding: 0;
+}
+
+.controlButton {
+  font-size: 5rem;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.plus,
+.minus {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.plus::before {
+  content: "+";
+}
+
+.minus::before {
+  content: "-";
+}
+
+.grades {
+  margin: 2.5rem 0;
+}
+
+.tag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  background-color: gray;
+  margin-right: 2px;
+}
